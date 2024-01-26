@@ -72,8 +72,10 @@ align-items: center;
 }
 
 .education {
+  height: fit-content;
   position: sticky;
   top: 10px;
+
 }
 
 
