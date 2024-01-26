@@ -1,0 +1,28 @@
+/* Badge Helper Class */
+@import url("../../../_style/variables.css");
+.badge {
+    border-radius: 999px;
+    background-color: var(--cl--ic-terine);
+    background: transparent;
+    color: var(--cl--baby-powder);
+    box-shadow: rgba(var(--cl--black), 0.08) 0px 1px 4px 1px inset, rgba(var(--cl--ic-terine), 0.2) 0px 1px 0px 0px inset;
+    opacity: 1;
+    backdrop-filter: blur(32px);
+  }
+  
+  /* Additional styles for the badge container */
+  .badge-container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 6px 16px;
+    position: relative;
+    width: max-content;
+
+  }

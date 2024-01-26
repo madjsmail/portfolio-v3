@@ -1,0 +1,52 @@
+.relative {
+    position: relative;
+  }
+  
+  .infinite-slider {
+    width: 500px; 
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white; 
+  }
+  
+  .infinite-slider::before, 
+  .infinite-slider::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%); 
+  }
+  
+  .infinite-slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .infinite-slider::after {
+    right: 0;  
+    top: 0;
+    transform: scaleX(-1);
+  }
+  
+  .slide {
+    width: 250px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  @keyframes infiniteSlider {
+    0% {
+      transform: translateX(0);
+    }
+    
+    100% {
+      transform: translateX(calc(-250px * 5)) 
+    }
+  }
+  
+  .animate-infinite-slider {
+    animation: infiniteSlider 20s linear infinite;  
+  }

@@ -1,0 +1,44 @@
+.relative {
+    position: relative;
+  }
+  
+  .spotlight-card-wrapper {
+    width: min-content;
+  }
+  
+  .base-spotlight-card {
+    cursor: default;
+    border-radius: 0.5rem;
+    border: 1px solid #2d3748;
+    backdrop-filter: blur(32px);
+    height: 100%;
+    width: 100%;
+    color: hsla(var(--cl--baby-powder));
+    transition: border-color 0.5s;
+    outline: none;
+  }
+  
+  .base-spotlight-card:focus {
+    border-color: hsla(var(--cl--cerise));
+  }
+  
+  .base-spotlight-card::placeholder {
+    color: hsla(var(--cl--baby-powder));
+    user-select: none;
+  }
+  
+  .overlay-spotlight-card {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    cursor: default;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    padding: 0.875rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }

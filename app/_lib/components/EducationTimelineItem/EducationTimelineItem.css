@@ -1,0 +1,30 @@
+
+.education__time-line__item {
+    margin-bottom: 20px; /* Adjust as needed */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .education__time-line__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .education-title h3 {
+    margin: 0;
+  }
+  
+  .education-title span {
+    color: #888; /* Adjust color as needed */
+  }
+  
+  .education-date span {
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+  
+  .education__time-line__item__content {
+    margin-top: 10px;
+  }
+  
+  /* Additional styling if needed */

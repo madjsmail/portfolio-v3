@@ -1,0 +1,37 @@
+.lamp-card{
+    width: 500px;
+    height: 300px;
+
+    border-color: hsl(var(--cl--baby-powder));
+    position: relative;
+
+    z-index: 4;
+    
+}
+.lamp-card .card-overlay{
+    width: 100%;
+    height: 100%;
+
+    border-color: hsl(var(--cl--baby-powder));
+    position: relative;
+    backdrop-filter: blur(32px);
+    z-index: 4;
+    
+}
+.lamp-card h3{
+    background:linear-gradient(150deg, hsla(var(--cl--baby-powder) ,1) 40%, hsla(var(--cl--cerise) ,0.1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.lamp-card::after{
+    content:  '';
+    position: absolute;
+    background-color: hsla(var(--cl--cerise) ,1);
+    width: 50px;
+    height: 40px;
+    border-radius: 55px;
+    top: 85px;
+    left: 253px;
+    z-index: -1;
+}

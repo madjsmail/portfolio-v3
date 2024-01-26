@@ -1,0 +1,36 @@
+.experience-card {
+    border-radius: 8px;
+  }
+  
+  .experience-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+  }
+  .experience-header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  
+  }
+  
+  .experience-header h2 {
+    margin: 0;
+  }
+  
+  .technologies {
+    margin-top: 12px;
+  }
+  
+  .technologies strong {
+    margin-right: 8px;
+  }
+  .technologies .badges {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap ;
+    gap: 5px;
+  }

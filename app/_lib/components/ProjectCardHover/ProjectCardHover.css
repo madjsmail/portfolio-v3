@@ -1,0 +1,38 @@
+.project {
+    height: 400px;
+    flex: 1;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: hsl(var(--cl--baby-powder));
+    transition: all 0.3s ease-in-out;/* Added transition property */
+    position: relative;
+  }
+  .project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the darkness level */
+    z-index: 0;
+    pointer-events: none;
+  }
+
+
+
+  
+
+  
+
+  .project:hover {
+    transform: scale(0.9);
+
+    border-radius: 20px;
+  }

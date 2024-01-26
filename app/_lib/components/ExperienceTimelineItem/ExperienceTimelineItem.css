@@ -1,0 +1,42 @@
+.experience__time-line,.education__time-line{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.experience__time-line__item {
+    margin-bottom: 20px; /* Adjust as needed */
+    /* Add other styling properties as needed */
+  }
+  
+  .experiance__time-line__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add other styling properties as needed */
+  }
+  
+  .job-title h4 {
+    margin: 0;
+    /* Add other styling properties as needed */
+  }
+  
+  .job-title span {
+    color: #888; /* Adjust color as needed */
+    /* Add other styling properties as needed */
+  }
+  
+  .job-date span {
+    margin-right: 10px; /* Adjust spacing as needed */
+    /* Add other styling properties as needed */
+  }
+  
+  .job-description span {
+    /* Add styling for the job description */
+    /* You may want to adjust the styling based on your design */
+  }
+
+  .tech-used{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,196 @@
+
+.nav-grid{
+  margin-block: 10px;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: var(--nav-max-height);
+  height: var(--nav-max-height);
+  
+  padding: var(--nav-padding);
+  background-color:  hsl(var(--cl--black));
+  color: hsl(var(--cl--baby-powder));
+
+
+}
+
+.nav h3 {
+  margin: 0;
+}
+
+.nav svg {
+
+	width: 100%; height: 100%;
+}
+.nav svg text {
+	animation: stroke 5s infinite  normal;
+	/* animation: stroke 5s infinite forwards; */
+	stroke-width: 2;
+	stroke: hsl(var(--cl--baby-powder))
+	/* font-size: var(--h3-font-size); */
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: hsl(var(--cl--baby-powder));
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: hsl(var(--cl--baby-powder));
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: hsl(var(--cl--baby-powder));
+    stroke-width: 3;
+  }
+  100% {
+    fill: hsl(var(--cl--baby-powder));
+    stroke: hsl(var(--cl--cerise));
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right:10px;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: hsl(var(--cl--baby-powder));
+
+}
+
+.nav li a:hover  {
+  color:  hsl(var(--cl--cerise));
+}
+.nav ul li a::before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: hsl(var(--cl--cerise));
+  transform-origin: left; /* Set the transform origin to the left */
+  transform: scaleX(0); /* Initial scaleX is 0 */
+  transition: transform 0.3s cubic-bezier(0.52, -0.11, 0.47, 1.26);
+}
+
+
+
+
+
+.burger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: none; /* Initially hide the overlay */
+}
+
+/* Styles for the burger icon */
+.burger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .nav ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:  hsl(var(--cl--baby-powder));
+    color:  hsl(var(--cl--black));
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 1;
+    border-top-right-radius: 50vw;
+    border-bottom-right-radius: 50vw;
+    transform: translateX(-100%) translateZ(-100px);
+    transition: border-top-right-radius 0.5s linear, border-bottom-right-radius 0.5s linear, transform 0.5s cubic-bezier( 0.175, 0.885, 0.32, 1.275 );
+  }
+  
+  .nav ul.open {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: translateX(0%) translateZ(0px);
+  }
+  .nav ul li a{
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    text-decoration: inherit;
+    z-index: 10;
+    display: inline-block;
+    width: fit-content;
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 900;
+    --tw-text-opacity: 1;
+    color:  hsl(var( --cl--black));
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    transform: translateX(0px) translateY(0px) rotate(0deg) translateZ(0px);
+  }
+  .nav ul li a:hover {
+    color:  hsl(var(--cl--black));
+  }
+  
+  .nav ul li a:hover::before {
+    transform-origin: right; 
+    transform: scaleX(1); 
+  }
+  .burger-menu {
+    display: block; 
+  }
+
+  .nav ul.open {
+    display: flex; 
+  }
+}

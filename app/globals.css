@@ -1,11 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import url("./_style/base.css");
+@import url("./_style/layout.css");
+@import url("./_style/helper.css");
+
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,21 +18,42 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    /* --cl--black: 40, 23%, 3%
+    --cl--ic-terine: 64, 100%, 66%
+    --cl--cerise: 344, 78%, 55%
+    --cl--orange-peel: 35, 100%, 55%
+    --cl--baby-powder: 60, 100%, 99% */
+
+    --text-size-xs: 0.5rem;
+    --text-size-sm: 0.71rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.41rem;
+    --text-size-xl: 2rem;
+    --text-size-2xl: 2.83rem;
+    --text-size-3xl: 4rem;
+    --text-size-4xl: 5.65rem;
+    --text-size-5xl: 7.99rem;
+
+    --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+    --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+    --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+    --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+    --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+    --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+    --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+
   }
+
+}
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  background: hsl(var(--cl--black));
+  color: hsl(var(--cl--baby-powder));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

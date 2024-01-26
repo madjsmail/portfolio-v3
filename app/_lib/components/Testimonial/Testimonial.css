@@ -1,0 +1,64 @@
+
+body img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* Card */
+.testimonial {
+  background-color: hsl(var(--cl--black) ,.5);
+  border-radius: 5px;
+  padding: 40px 25px 25px;
+  flex-grow: 1;
+  flex-basis: 280px;
+
+  position: relative;
+  backdrop-filter: blur(32px);
+}
+
+.testimonial__text {
+  font-weight: normal;
+  font-size: rem(14);
+  line-height: 21px;
+  margin-bottom: rem(25);
+  text-wrap: pretty;
+}
+
+.testimonial__job {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.testimonial__name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.testimonial__img {
+  display: inline-block;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.testimonial__img img {
+  vertical-align: bottom;
+  border-radius: 50%;
+}
+
+.testimonial__info {
+  display: inline-block;
+}
+
+/* General Styles */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Specific Styles */

@@ -1,0 +1,11 @@
+.container--testimonials{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.container--testimonials> div{
+    flex: 1;
+    height: 500px;
+}
