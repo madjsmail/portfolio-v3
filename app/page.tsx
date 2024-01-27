@@ -8,7 +8,7 @@ import FaqComponent from "./_lib/components/FaqComponent/FaqComponent";
 import AccordionComponent from "./_lib/components/accordionCard/AccordionCard";
 import InfiniteSlider from "./_lib/components/infineSlider/InfineSlider";
 import BlurCard from "./_lib/components/blurCard/BlurCard";
-import Testimonial from "./_lib/components/Testimonial/TestimonialCard";
+
 import LampCard from "./_lib/components/lampCard/LampCard";
 import InfiniteScroll from "./_lib/components/infiniteScroll/InfiniteScroll";
 
@@ -109,32 +109,7 @@ export default function Home() {
         <h3>blur card</h3>
         <BlurCard />
       </div>
-      <div className="testmonial">
-        <h3>testmonial</h3>
-        <section className="container container--testimonials">
-          <Testimonial
-            text="At first, it may be intimidating to see all of the available courses. Pick a track that interests you and work through it at your own pace."
-            imgSrc="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-            name="Timmy Dicki"
-            job="Railroad Engineer" title={""}          />
-          <Testimonial
-            text="At first, it may be intimidating to see all of the available courses. Pick a track that interests you and work through it at your own pace."
-            imgSrc="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-            name="Timmy Dicki"
-            job="Railroad Engineer" title={""}          />
-          <Testimonial
-            text="At first, it may be intimidating to see all of the available courses. Pick a track that interests you and work through it at your own pace."
-            imgSrc="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-            name="Timmy Dicki"
-            job="Railroad Engineer" title={""}          />
-          {/* Add more Testimonial components with different props for each testimonial */}
-        </section>
 
-        <div className="">
-          <h1>adlamdkada</h1>
-          <LampCard></LampCard>
-        </div>
-      </div>
       <div>
         <h1>Infinite Scroll Example</h1>
         <InfiniteScroll logos={[]} />

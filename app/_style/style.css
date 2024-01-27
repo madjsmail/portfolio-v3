@@ -191,3 +191,9 @@ align-items: center;
 .social:hover > li:hover {
   opacity: 1;
 }
+
+.template-grid .container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }

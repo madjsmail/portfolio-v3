@@ -1,7 +1,7 @@
 html {font-size: 16px;}
 
 body {
-
+  font-family: 'Inter', sans-serif;
   font-weight: false;
   line-height: 1.65;
 }
@@ -22,30 +22,40 @@ h5 {
   
 }
 
-h1,
+h1, 
 .text-size-h1 {
-  font-family: 'Inter', sans-serif;
+
   font-weight: 400;
-  margin-top: 0;
-  font-size: 5.65em;
+  margin-top: 0;  
+  font-size: clamp(3rem, 5.65rem, 8vw);
+
 }
 
 h2,
-.text-size-h2 { font-size: 4em; }
+.text-size-h2 { 
+  font-size: clamp(2rem, 4rem, 6vw); 
+}
 
 h3,
-.text-size-h3 { font-size: 2.83em; }
+.text-size-h3 {
+  font-size: clamp(1.5rem, 2.83rem, 4vw);
+}
 
-h4,
-.text-size-h4 { font-size: 2em; }
+h4,  
+.text-size-h4 {
+  font-size: clamp(1.25rem, 2rem, 3vw);
+}
 
 h5,
-.text-size-h5 { font-size: 1.41em; }
+.text-size-h5 {
+  font-size: clamp(1rem, 1.41rem, 2vw);  
+}
 
-.text-caption { font-size: 0.71em; }
+.text-caption {
+  font-size: clamp(0.5rem, 0.71rem, 1vw);
+}
 
 small,
 .text-small {
-  font-size: 0.5em;
+  font-size: clamp(0.25rem, 0.5rem, 0.75vw); 
 }
-  

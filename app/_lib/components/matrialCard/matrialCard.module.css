@@ -1,0 +1,42 @@
+/* styles.module.css */
+.imgCard {
+  height: auto;
+  width: 100%;
+}
+.materialCard {
+  display: block;
+  background-color: #28292a;
+  width: 350px;
+  min-width: 200px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 200ms cubic-bezier(.2,0,0,1);
+}
+
+.cardPicture {
+  border-radius: 30px;
+  transition: 200ms cubic-bezier(.2,0,0,1);
+  height: auto;
+  width: 100%;
+}
+
+.cardInfo {
+  padding: 20px;
+}
+
+.cardTitle {
+  font-weight: 400;
+}
+
+/* Modifiers */
+.materialCard:active {
+  border-radius: 50px;
+  background-color: hsl(var(--cl--cerise))
+}
+
+.cardPicture:active {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}

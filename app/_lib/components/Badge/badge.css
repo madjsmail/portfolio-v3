@@ -1,5 +1,4 @@
-/* Badge Helper Class */
-@import url("../../../_style/variables.css");
+
 .badge {
     border-radius: 999px;
     background-color: var(--cl--ic-terine);

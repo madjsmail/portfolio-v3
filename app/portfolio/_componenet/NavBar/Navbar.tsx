@@ -37,7 +37,7 @@ function Navbar() {
               <Link href={'/portfolio/resume'} >Resume</Link>
             </li>
             <li>
-              <Link href={'/portfolio/project'} >Project</Link>
+              <Link href={'/portfolio/portfolio'} >Portfolio</Link>
             </li>
             <li>
               <Link href={'/portfolio/skills'} >Skills</Link>
