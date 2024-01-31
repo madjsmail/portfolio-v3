@@ -13,13 +13,13 @@ function Template() {
       <div className="container">
         <MaterialCard
         href="/some-article"
-        imageUrl="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl="https://github.com/madjsmail/nextui-dashboard"
         title="ExpressJs Starting template"
         description="a starting template for bult with expressjs"
       />
         <MaterialCard
         href="/some-article"
-        imageUrl="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageUrl="https://github.com/madjsmail/nextui-dashboard"
         title="nestjs Starting template"
         description="a starting template for  nestjs"
       />

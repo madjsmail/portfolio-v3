@@ -62,9 +62,16 @@ align-items: center;
 .education {
   flex: 1; /* Each child takes up equal width */
   margin: 10px; /* Add margin or adjust as needed */
+  position: relative;
 }
 .experience__time-line__item{
   padding: 10px;
+
+}
+.resume-grid  .experience__card,.resume-grid .education__card{
+  position: sticky;
+  top: 10px;
+
 }
 .resume-grid .experience .spotlight-card-wrapper,.education .spotlight-card-wrapper
  {
@@ -72,9 +79,9 @@ align-items: center;
 }
 
 .education {
-  height: fit-content;
+  /* height: fit-content;
   position: sticky;
-  top: 10px;
+  top: 10px; */
 
 }
 
@@ -196,4 +203,15 @@ align-items: center;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+  }
+
+
+  .skills-grid{
+
+  } 
+  
+  .skills-grid .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }

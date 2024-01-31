@@ -78,7 +78,7 @@ function Resume() {
           <h1>Experience</h1>
           <div className="experience__time-line">
             {experiences.map((experience, index) => (
-              <CardSpotlightBorderCSS key={index} type="cerise">
+              <CardSpotlightBorderCSS className="experience__card" key={index} type="cerise">
                 <ExperienceTimelineItem  {...experience} />
               </CardSpotlightBorderCSS>
             ))}
@@ -89,7 +89,7 @@ function Resume() {
           <h1>Educational</h1>
           <div className="education__time-line">
           {educationData.map((education, index) => (
-             <CardSpotlightBorderCSS key={index} type="orange-peel">
+             <CardSpotlightBorderCSS className="education__card" key={index} type="orange-peel">
             <EducationTimelineItem key={index} {...education} />
             </CardSpotlightBorderCSS>
           ))}
