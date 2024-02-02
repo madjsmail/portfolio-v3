@@ -2,6 +2,7 @@ import Badge from "@/app/_lib/components/Badge/badge";
 import MaterialCard from "@/app/_lib/components/matrialCard/MatrialCard";
 import React from "react";
 
+const image = './repository-open-graph-template.png'
 function Template() {
   return (
     <div className="content-grid template-grid">
@@ -13,7 +14,7 @@ function Template() {
       <div className="container">
         <MaterialCard
         href="/some-article"
-        imageUrl="https://github.com/madjsmail/nextui-dashboard"
+        imageUrl={image}
         title="ExpressJs Starting template"
         description="a starting template for bult with expressjs"
       />
