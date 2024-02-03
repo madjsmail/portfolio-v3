@@ -23,16 +23,31 @@
     background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the darkness level */
     z-index: 0;
     pointer-events: none;
+    
   }
 
+  .project__content{
+    z-index: 1;
+  }
 
+  .project:hover{
+    transform: scale(0.9) translateZ(0);
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0.185));
+    color: rgb(255, 255, 255, 80%);
+    border-radius: 50px;
+    
+  }
+  
+  .container:hover > .project:not(:hover){
+    filter:  blur(10px);
+    transform: scale(1) translateZ(0);
+  }
 
   
 
-  
-
-  .project:hover {
+  /* .project:hover {
     transform: scale(0.9);
+    filter: drop-shadow(0 0 0px rgb(255, 255, 255, 60%));
+    color: rgb(255, 255, 255, 80%);
 
-    border-radius: 20px;
-  }
+  } */

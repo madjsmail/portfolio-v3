@@ -2,8 +2,40 @@ import Badge from "@/app/_lib/components/Badge/badge";
 import MaterialCard from "@/app/_lib/components/matrialCard/MatrialCard";
 import React from "react";
 
-const image = './repository-open-graph-template.png'
+const image = 'https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?'
 function Template() {
+  const cardData = [
+    {
+      href: "/some-article",
+      imageUrl: image, // Assuming you have a variable named `image` with the image URL
+      title: "ExpressJs Starting template",
+      description: "a starting template built with expressjs"
+    },
+    {
+      href: "/some-article",
+      imageUrl: image,
+      title: "nestjs Starting template",
+      description: "a starting template for nestjs"
+    },
+    {
+      href: "/some-article",
+      imageUrl: image,
+      title: "Dashcn",
+      description: "a dashboard built with next and shadcn"
+    },
+    {
+      href: "/some-article",
+      imageUrl: image,
+      title: "base css",
+      description: "the base css for my projects"
+    },
+    {
+      href: "/some-article",
+      imageUrl: image,
+      title: "vite react",
+      description: "react starting template with vite plus folder structure" 
+    }
+  ];
   return (
     <div className="content-grid template-grid">
       <div className="grid-header">
@@ -12,30 +44,14 @@ function Template() {
         <h3>the is some boilerplate code i start my projects from</h3>
       </div>
       <div className="container">
-        <MaterialCard
-        href="/some-article"
-        imageUrl={image}
-        title="ExpressJs Starting template"
-        description="a starting template for bult with expressjs"
-      />
-        <MaterialCard
-        href="/some-article"
-        imageUrl="https://github.com/madjsmail/nextui-dashboard"
-        title="nestjs Starting template"
-        description="a starting template for  nestjs"
-      />
-        <MaterialCard
-        href="/some-article"
-        imageUrl="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        title="Dashcn "
-        description="a dashboard built with next and shadcn"
-      />
-        <MaterialCard
-        href="/some-article"
-        imageUrl="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        title="base css"
-        description="the base css for my projects"
-      />
+            
+          {cardData.map((card, index) => (
+            <MaterialCard
+              key={index} 
+              {...card} 
+            />
+          ))}
+      
         </div>
     </div>
   );

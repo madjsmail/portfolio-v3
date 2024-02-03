@@ -44,6 +44,7 @@ align-items: center;
   flex-wrap: wrap;
   margin-block: var(--section-margin);
 }
+
 .resume-grid {
   width: 100%;
   height: min-content;

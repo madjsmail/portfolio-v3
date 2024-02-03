@@ -17,9 +17,11 @@ const ProjectCardHover: React.FC<ProjectCardHoverProps> = ({ imageUrl, title, de
       }}
     >
      
-      <h3>{title}</h3>
+        <div className="project__content">
+        <h3>{title}</h3>
       <p>{description}</p>
     
+        </div>
     </div>
   );
 };
