@@ -8,9 +8,20 @@ function Resume() {
   const experiences = [
     {
       position: "Software Engineer",
+      company: "Techmologie",
+      startDate: "Apr 2023",
+      endDate: "on going",
+      location: "Algeria, Remote",
+      role: " part time Full Stack Web Development",
+      description:
+        "Full stack web development using Angular and Express.js, maintaining and adding features to websites. Collaborated closely with designers and QA for seamless project execution. Proficient in Express.js, optimizing performance, and introducing new functionality. Contributed to reaching 1000+ users. Committed to industry best practices and coding standards.",
+      technologiesUsed: ["Angular", "Express.js" ,"nestjs","mongodb","postgresql","react","nextjs","tailwindcss"],
+    },
+    {
+      position: "Software Engineer",
       company: "CAMIO",
       startDate: "Apr 2023",
-      endDate: "Ongoing",
+      endDate: "feb 2024",
       location: "Algeria, Remote",
       role: "Full Stack Web Development",
       description:

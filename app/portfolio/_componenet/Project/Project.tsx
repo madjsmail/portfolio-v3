@@ -13,7 +13,7 @@ function Project() {
         Projects
       </h1>
     <h3>
-      the work I &apos ve done <span>so far</span>
+      the work I've done <span>so far</span>
     </h3>
         </div>
     <div className="container">

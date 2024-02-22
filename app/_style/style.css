@@ -34,6 +34,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-block: 10px;
 
 }
 .project-grid .container {
@@ -62,8 +63,12 @@ align-items: center;
 .resume-grid .experience,
 .education {
   flex: 1; /* Each child takes up equal width */
-  margin: 10px; /* Add margin or adjust as needed */
+  margin: 30px 10px; /* Add margin or adjust as needed */
   position: relative;
+}
+.resume-grid .experience h1,
+.education h1 {
+  margin-block:10px ;
 }
 .experience__time-line__item{
   padding: 10px;
@@ -200,10 +205,14 @@ align-items: center;
   opacity: 1;
 }
 
+.template-grid{
+  text-align: center;
+}
 .template-grid .container{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
 

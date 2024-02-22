@@ -34,6 +34,12 @@ function Navbar() {
               <Link href={'/portfolio'} >Home</Link>
             </li>
             <li>
+              <Link href={'/portfolio/lab'} >Lab</Link>
+            </li>
+            <li>
+              <Link href={'/portfolio/blog'} >Blog</Link>
+            </li>
+            {/* <li>
               <Link href={'/portfolio/resume'} >Resume</Link>
             </li>
             <li>
@@ -44,7 +50,7 @@ function Navbar() {
             </li>
             <li>
               <Link href={'/portfolio/contact'} >Contact</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="menu-overlay" onClick={toggleMenu}></div>

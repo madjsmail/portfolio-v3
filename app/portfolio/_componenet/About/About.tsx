@@ -28,7 +28,7 @@ function About() {
     <h2 className="section-title"><span> About me</span></h2>
     <p>
       <span>
-      Hello,I am  a seasoned software engineer with expertise in full-stack web development. Armed with a Master&apos;s in Computer Systems, I&apos;ve contributed to impactful projects for CAMIO and HOTELLO. As a freelancer, I excel in crafting secure web solutions. I&apos;ve designed a document management system and explored blockchain for electronic health records. Let&apos;s connect and discuss how my skills can elevate our projects.
+      I am  a seasoned software engineer with expertise in full-stack web development. Armed with a Master&apos;s in Computer Systems, I&apos;ve contributed to impactful projects for CAMIO and HOTELLO. As a freelancer, I excel in crafting secure web solutions. I&apos;ve designed a document management system and explored blockchain for electronic health records. Let&apos;s connect and discuss how my skills can elevate our projects.
       </span>
     </p>
   </section>
